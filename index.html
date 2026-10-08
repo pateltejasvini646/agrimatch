@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Find agricultural government schemes matching your farming needs with AgriMatch.">
+  <title>AgriMatch | Find Your Farming Support</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header class="navbar">
+    <a class="brand" href="#home">
+      <span class="brand-icon">🌱</span>
+      <span>Agri<span class="brand-green">Match</span></span>
+    </a>
+
+    <nav class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#finder">Find Schemes</a>
+      <a href="#how-it-works">How It Works</a>
+    </nav>
+
+    <a href="#finder" class="nav-cta">Get Started ↗</a>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <span class="eyebrow">🌾 SMARTER SUPPORT FOR EVERY FARMER</span>
+
+        <h1>
+          Your farm.<br>
+          Your needs.<br>
+          <span class="gradient-text">Your opportunities.</span>
+        </h1>
+
+        <p>
+          Find agricultural government schemes based on your state,
+          farming category, crop and support needs — in one simple place.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#finder" class="button button-primary">Find My Schemes <span>→</span></a>
+          <a href="#how-it-works" class="button button-outline">How It Works</a>
+        </div>
+
+        <div class="hero-points">
+          <span>✓ Simple information</span>
+          <span>✓ Personalized matching</span>
+          <span>✓ Clear scheme details</span>
+        </div>
+      </div>
+
+      <div class="hero-illustration" aria-label="Illustration of a green farm">
+        <div class="sun"></div>
+        <div class="floating-note note-one">🌱 Grow with support</div>
+        <div class="floating-note note-two">💚 Better farming</div>
+
+        <div class="farm">
+          <div class="hill hill-back"></div>
+          <div class="hill hill-front"></div>
+          <div class="farm-house">🏡</div>
+          <div class="plant plant-one">🌾</div>
+          <div class="plant plant-two">🌿</div>
+          <div class="plant plant-three">🌾</div>
+          <div class="plant plant-four">🌿</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="benefits-strip">
+      <article class="benefit-item">
+        <div class="benefit-icon icon-lilac">🎯</div>
+        <div>
+          <h3>Personalized Matches</h3>
+          <p>Based on your answers</p>
+        </div>
+      </article>
+
+      <article class="benefit-item">
+        <div class="benefit-icon icon-peach">📋</div>
+        <div>
+          <h3>Useful Details</h3>
+          <p>Benefits and eligibility</p>
+        </div>
+      </article>
+
+      <article class="benefit-item">
+        <div class="benefit-icon icon-mint">🌿</div>
+        <div>
+          <h3>Farmer-Friendly</h3>
+          <p>Simple explanations</p>
+        </div>
+      </article>
+    </section>
+
+    <section class="finder-section section-padding" id="finder">
+      <div class="section-heading">
+        <span class="eyebrow">LET'S FIND YOUR MATCH</span>
+        <h2>Tell us about your <span class="gradient-text">farm.</span></h2>
+        <p>Fill in your details to explore relevant schemes.</p>
+      </div>
+
+      <form id="farmerForm" class="form-card">
+        <div class="form-card-heading">
+          <div class="farmer-avatar">👩‍🌾</div>
+          <div>
+            <h3>Farmer Information</h3>
+            <p>Fields marked with * are required.</p>
+          </div>
+        </div>
+
+        <div class="form-grid">
+          <div class="form-group">
+            <label for="state">State *</label>
+            <select id="state" required>
+              <option value="">Choose your state</option>
+              <option value="Madhya Pradesh">Madhya Pradesh</option>
+              <option value="Uttar Pradesh">Uttar Pradesh</option>
+              <option value="Maharashtra">Maharashtra</option>
+              <option value="Rajasthan">Rajasthan</option>
+              <option value="Gujarat">Gujarat</option>
+              <option value="Bihar">Bihar</option>
+              <option value="Punjab">Punjab</option>
+              <option value="Haryana">Haryana</option>
+              <option value="Karnataka">Karnataka</option>
+              <option value="Tamil Nadu">Tamil Nadu</option>
+              <option value="Other">Other state</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="farmerType">Farmer Category *</label>
+            <select id="farmerType" required>
+              <option value="">Choose category</option>
+              <option value="marginal">Marginal farmer</option>
+              <option value="small">Small farmer</option>
+              <option value="other">Other / larger landholding</option>
+              <option value="tenant">Tenant farmer / cultivator</option>
+              <option value="landless">Landless agricultural worker</option>
+              <option value="unknown">Not sure</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="crop">Main Crop *</label>
+            <select id="crop" required>
+              <option value="">Choose your crop</option>
+              <option value="wheat">Wheat</option>
+              <option value="rice">Rice / Paddy</option>
+              <option value="soybean">Soybean</option>
+              <option value="pulses">Pulses</option>
+              <option value="cotton">Cotton</option>
+              <option value="vegetables">Vegetables</option>
+              <option value="fruits">Fruits</option>
+              <option value="other">Other / multiple crops</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="land">Landholding Size</label>
+            <select id="land">
+              <option value="unknown">Not sure / prefer not to say</option>
+              <option value="marginal">Up to 1 hectare</option>
+              <option value="small">1–2 hectares</option>
+              <option value="medium">2–10 hectares</option>
+              <option value="large">More than 10 hectares</option>
+              <option value="none">No owned land</option>
+            </select>
+          </div>
+
+          <div class="form-group form-full">
+            <label for="support">What support do you need? *</label>
+            <select id="support" required>
+              <option value="">Choose your main requirement</option>
+              <option value="income">Income / financial assistance</option>
+              <option value="insurance">Crop insurance / crop loss</option>
+              <option value="credit">Agricultural loan / credit</option>
+              <option value="soil">Soil testing / soil health</option>
+              <option value="equipment">Farm machinery / equipment</option>
+              <option value="irrigation">Irrigation / water support</option>
+              <option value="market">Selling crops / market access</option>
+              <option value="multiple">Multiple types of support</option>
+            </select>
+          </div>
+        </div>
+
+        <button type="submit" class="button button-primary submit-button">
+          Find Matching Schemes <span>→</span>
+        </button>
+
+        <p class="privacy-note">
+          🔒 Your answers are used in this browser to filter the included scheme data.
+        </p>
+      </form>
+    </section>
+
+    <section class="results-section section-padding" id="results" hidden>
+      <div class="results-heading">
+        <div>
+          <span class="eyebrow">YOUR FARMING SUPPORT</span>
+          <h2>Your <span class="gradient-text">matched schemes</span></h2>
+          <p id="resultSummary">Results based on your information.</p>
+        </div>
+
+        <button type="button" id="resetButton" class="button button-outline">
+          Edit Answers ↗
+        </button>
+      </div>
+
+      <div class="results-toolbar">
+        <label class="search-box">
+          <span>🔎</span>
+          <input type="search" id="schemeSearch" placeholder="Search schemes or benefits...">
+        </label>
+
+        <select id="schemeFilter" aria-label="Filter by support type">
+          <option value="all">All support types</option>
+          <option value="income">Income support</option>
+          <option value="insurance">Crop insurance</option>
+          <option value="credit">Farm credit</option>
+          <option value="soil">Soil health</option>
+          <option value="equipment">Equipment</option>
+          <option value="irrigation">Irrigation</option>
+          <option value="market">Market access</option>
+        </select>
+      </div>
+
+      <div id="schemeResults" class="scheme-grid"></div>
+
+      <div class="official-note">
+        <strong>Before you apply</strong>
+        <p>
+          Scheme eligibility, benefits, documents and application windows can change.
+          Confirm the current requirements with the official government department.
+        </p>
+      </div>
+    </section>
+
+    <section class="how-section section-padding" id="how-it-works">
+      <div class="section-heading">
+        <span class="eyebrow">THREE SIMPLE STEPS</span>
+        <h2>How <span class="gradient-text">AgriMatch</span> works</h2>
+        <p>From your farming needs to relevant scheme information.</p>
+      </div>
+
+      <div class="steps-grid">
+        <article class="step-card step-yellow">
+          <span class="step-number">01</span>
+          <div class="step-emoji">📝</div>
+          <h3>Enter Your Details</h3>
+          <p>Choose your state, farmer category, crop and required support.</p>
+        </article>
+
+        <article class="step-card step-green">
+          <span class="step-number">02</span>
+          <div class="step-emoji">🎯</div>
+          <h3>Discover Matches</h3>
+          <p>The website compares your answers with its included scheme records.</p>
+        </article>
+
+        <article class="step-card step-purple">
+          <span class="step-number">03</span>
+          <div class="step-emoji">📚</div>
+          <h3>Explore Scheme Details</h3>
+          <p>Read benefits, eligibility, documents and official application information.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="closing-banner">
+      <div>
+        <span class="eyebrow">GROW WITH THE RIGHT INFORMATION</span>
+        <h2>Every farmer deserves to know their opportunities. 🌱</h2>
+        <p>Start exploring support for your farming needs.</p>
+      </div>
+      <a href="#finder" class="button button-primary">Find My Schemes →</a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a class="brand" href="#home">
+      <span class="brand-icon">🌱</span>
+      <span>Agri<span class="brand-green">Match</span></span>
+    </a>
+    <p>Making agricultural scheme information easier to explore. 💚</p>
+    <small>Student project · Not an official government website</small>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
