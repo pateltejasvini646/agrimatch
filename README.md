@@ -1,98 +1,48 @@
-# AgriMatch backend (four states)
+# 🌾 AgriMatch – Farmer Scheme Finder
 
-This project adds a small Express API and SQLite database to the existing vanilla HTML/CSS/JS AgriMatch frontend.
+AgriMatch is a full-stack web application that helps farmers discover government schemes based on their state, crop, landholding and farming category.
 
-Supported states:
-- Madhya Pradesh
-- Uttar Pradesh
-- Rajasthan
-- Maharashtra
+## ✨ Features
+- State-wise government scheme matching.
+- Personalized recommendations based on farmer details.
+- Crop and landholding-based eligibility filtering.
+- Scheme benefits and required documents.
+- Official application portal links.
+- Backend API and database integration.
 
-## Files
+## 🛠️ Tech Stack
+- **Frontend:** HTML, CSS, JavaScript
+- **Backend:** Node.js, Express.js
+- **Database:** MongoDB
 
-- `server.js` — REST API routes.
-- `data/schemes.json` — editable starter scheme dataset.
-- `database.js` — creates and seeds SQLite database.
-- `database/schema.sql` — database table definition.
-- `seed.js` — refreshes database records from JSON.
-- `package.json` — Node dependencies and scripts.
-
-## Requirements
-
-Install Node.js 18 or later.
-
-## Run
-
-Open a terminal in this folder:
+## 🚀 Getting Started
 
 ```bash
+git clone https://github.com/pateltejasvini646/agrimatch.git
+cd agrimatch
+```
+
+Install backend dependencies:
+
+```bash
+cd backend
 npm install
-npm run start
 ```
 
-The first run creates `database/agrimatch.sqlite` and imports records from `data/schemes.json`.
+Configure your `.env` file with the required environment variables and start the server:
 
-API should run at `http://localhost:3000`.
-
-## API examples
-
-Health check:
-
-```http
-GET http://localhost:3000/api/health
+```bash
+npm start
 ```
 
-Supported states:
+Open the frontend's `index.html` in your browser.
 
-```http
-GET http://localhost:3000/api/states
-```
+## 🎯 Objective
+To make government agricultural schemes easier to discover and accessible to farmers through a simple, user-friendly platform.
 
-List all schemes for Madhya Pradesh:
+## 🔮 Future Scope
+- AI-based scheme recommendations.
+- Regional language support.
+- More state-specific schemes.
 
-```http
-GET http://localhost:3000/api/schemes?state=Madhya%20Pradesh
-```
-
-Filter by support type:
-
-```http
-GET http://localhost:3000/api/schemes?state=Maharashtra&support=income
-```
-
-Match a farmer profile:
-
-```http
-POST http://localhost:3000/api/match
-Content-Type: application/json
-
-{
-  "state": "Madhya Pradesh",
-  "farmerType": "small",
-  "crop": "wheat",
-  "land": "small",
-  "support": "income"
-}
-```
-
-Valid `farmerType` values follow the frontend form:
-`marginal`, `small`, `other`, `tenant`, `landless`, `unknown`.
-
-Valid crop values follow the frontend form:
-`wheat`, `rice`, `soybean`, `pulses`, `cotton`, `vegetables`, `fruits`, `other`.
-
-Valid land values:
-`marginal`, `small`, `medium`, `large`, `none`, `unknown`.
-
-Valid support values:
-`income`, `insurance`, `credit`, `soil`, `equipment`, `irrigation`, `market`, `multiple`, `pension`.
-
-## Connect your frontend
-
-For the existing form, replace the local `matchSchemes(profile)` call in `script.js` with a POST to `/api/match`. The API returns `{ count, schemes, profile }`. Update card rendering to use the returned field names: `supportTypes`, `benefit`, `eligibility`, `documents`, `officialUrl`, and `verificationNote`.
-
-When using the frontend on a different origin or port, set the API base URL accordingly. `cors` is enabled for local development.
-
-## Important data note
-
-The included records are starter/demo data. Some entries are broad scheme categories rather than individually verified, currently open schemes. They are marked `verified: false`. Before using this for real decisions, verify each scheme's current official eligibility rules, benefit amounts, state notifications, deadlines and application links. Do not present the preliminary matcher as a final eligibility decision.
+**Built with 💚 to empower farmers through technology.**
