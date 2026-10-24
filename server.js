@@ -18,6 +18,7 @@ const SUPPORT_TYPES = [
 
 app.use(cors());
 app.use(express.json());
+app.use(express.static(path.join(__dirname, "public")));
 
 function parseArray(value) {
   try { return JSON.parse(value || "[]"); }
