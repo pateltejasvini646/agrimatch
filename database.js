@@ -27,7 +27,7 @@ db.exec(`
   );
 `);
 
-const seedPath = path.join(__dirname, "..", "data", "schemes.json");
+const seedPath = path.join(__dirname,'seed.js');
 const seedSchemes = JSON.parse(fs.readFileSync(seedPath, "utf8"));
 
 const insert = db.prepare(`
