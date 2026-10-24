@@ -1,0 +1,473 @@
+[
+  {
+    "id": "pm-kisan",
+    "name": "PM-KISAN Samman Nidhi",
+    "states": [
+      "Madhya Pradesh",
+      "Uttar Pradesh",
+      "Rajasthan",
+      "Maharashtra"
+    ],
+    "supportTypes": [
+      "income"
+    ],
+    "farmerTypes": [
+      "marginal",
+      "small",
+      "other"
+    ],
+    "crops": [
+      "all"
+    ],
+    "landTypes": [
+      "marginal",
+      "small",
+      "medium",
+      "large"
+    ],
+    "benefit": "₹6,000 per year in eligible installments",
+    "eligibility": "Eligible landholding farmer families, subject to scheme exclusions and verification.",
+    "documents": [
+      "Aadhaar",
+      "land records",
+      "bank details",
+      "required registration"
+    ],
+    "officialUrl": "https://pmkisan.gov.in/",
+    "verificationNote": "Tenant and landless farmers generally do not qualify under the landholding-family rules.",
+    "verified": false
+  },
+  {
+    "id": "pm-fasal-bima",
+    "name": "Pradhan Mantri Fasal Bima Yojana",
+    "states": [
+      "Madhya Pradesh",
+      "Uttar Pradesh",
+      "Rajasthan",
+      "Maharashtra"
+    ],
+    "supportTypes": [
+      "insurance"
+    ],
+    "farmerTypes": [
+      "marginal",
+      "small",
+      "other",
+      "tenant"
+    ],
+    "crops": [
+      "all"
+    ],
+    "landTypes": [
+      "marginal",
+      "small",
+      "medium",
+      "large",
+      "none"
+    ],
+    "benefit": "Insurance protection for notified crop risks",
+    "eligibility": "Depends on notified crop, area, season, enrollment window and applicable rules.",
+    "documents": [
+      "cultivation or land records",
+      "bank details",
+      "crop information"
+    ],
+    "officialUrl": "https://pmfby.gov.in/",
+    "verificationNote": "Availability and enrollment rules vary by state, crop and season.",
+    "verified": false
+  },
+  {
+    "id": "kisan-credit-card",
+    "name": "Kisan Credit Card (KCC)",
+    "states": [
+      "Madhya Pradesh",
+      "Uttar Pradesh",
+      "Rajasthan",
+      "Maharashtra"
+    ],
+    "supportTypes": [
+      "credit"
+    ],
+    "farmerTypes": [
+      "marginal",
+      "small",
+      "other",
+      "tenant"
+    ],
+    "crops": [
+      "all"
+    ],
+    "landTypes": [
+      "marginal",
+      "small",
+      "medium",
+      "large",
+      "none"
+    ],
+    "benefit": "Access to eligible agricultural working-capital credit",
+    "eligibility": "Eligible cultivators, including certain tenant farmers and sharecroppers, subject to lender rules.",
+    "documents": [
+      "identity proof",
+      "address proof",
+      "cultivation details",
+      "lender-required documents"
+    ],
+    "officialUrl": "https://www.myscheme.gov.in/",
+    "verificationNote": "Final loan approval and limits are decided by the lending institution.",
+    "verified": false
+  },
+  {
+    "id": "soil-health-card",
+    "name": "Soil Health Card Scheme",
+    "states": [
+      "Madhya Pradesh",
+      "Uttar Pradesh",
+      "Rajasthan",
+      "Maharashtra"
+    ],
+    "supportTypes": [
+      "soil"
+    ],
+    "farmerTypes": [
+      "marginal",
+      "small",
+      "other",
+      "tenant",
+      "landless"
+    ],
+    "crops": [
+      "all"
+    ],
+    "landTypes": [
+      "marginal",
+      "small",
+      "medium",
+      "large",
+      "none"
+    ],
+    "benefit": "Soil testing and nutrient-management recommendations",
+    "eligibility": "Relevant to farmers seeking soil analysis and crop nutrient guidance.",
+    "documents": [
+      "farm location",
+      "soil sample details as required locally"
+    ],
+    "officialUrl": "https://soilhealth.dac.gov.in/",
+    "verificationNote": "Contact the local agriculture department for service availability.",
+    "verified": false
+  },
+  {
+    "id": "agri-mechanization",
+    "name": "Agricultural Mechanization Assistance",
+    "states": [
+      "Madhya Pradesh",
+      "Uttar Pradesh",
+      "Rajasthan",
+      "Maharashtra"
+    ],
+    "supportTypes": [
+      "equipment"
+    ],
+    "farmerTypes": [
+      "marginal",
+      "small",
+      "other",
+      "tenant"
+    ],
+    "crops": [
+      "all"
+    ],
+    "landTypes": [
+      "marginal",
+      "small",
+      "medium",
+      "large"
+    ],
+    "benefit": "Potential subsidy on eligible agricultural machinery",
+    "eligibility": "Depends on the state, equipment, farmer category, current scheme and application window.",
+    "documents": [
+      "farmer registration",
+      "identity proof",
+      "equipment quotation as required"
+    ],
+    "officialUrl": "https://www.myscheme.gov.in/",
+    "verificationNote": "This is a scheme category, not a guarantee of an open subsidy application.",
+    "verified": false
+  },
+  {
+    "id": "pm-krishi-sinchayee",
+    "name": "Pradhan Mantri Krishi Sinchayee Yojana",
+    "states": [
+      "Madhya Pradesh",
+      "Uttar Pradesh",
+      "Rajasthan",
+      "Maharashtra"
+    ],
+    "supportTypes": [
+      "irrigation"
+    ],
+    "farmerTypes": [
+      "marginal",
+      "small",
+      "other",
+      "tenant"
+    ],
+    "crops": [
+      "all"
+    ],
+    "landTypes": [
+      "marginal",
+      "small",
+      "medium",
+      "large"
+    ],
+    "benefit": "Potential assistance through applicable irrigation components",
+    "eligibility": "Depends on the specific component, state implementation and approved project.",
+    "documents": [
+      "land or cultivation records",
+      "irrigation project details as applicable"
+    ],
+    "officialUrl": "https://pmksy.gov.in/",
+    "verificationNote": "Check the current state agriculture or horticulture department notification.",
+    "verified": false
+  },
+  {
+    "id": "enam",
+    "name": "e-NAM",
+    "states": [
+      "Madhya Pradesh",
+      "Uttar Pradesh",
+      "Rajasthan",
+      "Maharashtra"
+    ],
+    "supportTypes": [
+      "market"
+    ],
+    "farmerTypes": [
+      "marginal",
+      "small",
+      "other",
+      "tenant"
+    ],
+    "crops": [
+      "all"
+    ],
+    "landTypes": [
+      "marginal",
+      "small",
+      "medium",
+      "large",
+      "none"
+    ],
+    "benefit": "Online agricultural market information and trading access",
+    "eligibility": "Participation depends on the relevant mandi, registration and applicable rules.",
+    "documents": [
+      "identity proof",
+      "mandi registration details as required"
+    ],
+    "officialUrl": "https://enam.gov.in/",
+    "verificationNote": "Market-access platform, not a direct cash subsidy.",
+    "verified": false
+  },
+  {
+    "id": "mp-kisan-kalyan",
+    "name": "Mukhyamantri Kisan Kalyan Yojana",
+    "states": [
+      "Madhya Pradesh"
+    ],
+    "supportTypes": [
+      "income"
+    ],
+    "farmerTypes": [
+      "marginal",
+      "small",
+      "other"
+    ],
+    "crops": [
+      "all"
+    ],
+    "landTypes": [
+      "marginal",
+      "small",
+      "medium",
+      "large"
+    ],
+    "benefit": "State assistance for qualifying beneficiaries",
+    "eligibility": "Check current Madhya Pradesh beneficiary, registration and exclusion rules.",
+    "documents": [
+      "land records",
+      "identity proof",
+      "beneficiary registration details"
+    ],
+    "officialUrl": "https://saara.mp.gov.in/",
+    "verificationNote": "Do not assume automatic eligibility from PM-KISAN status alone.",
+    "verified": false
+  },
+  {
+    "id": "up-mechanization",
+    "name": "UP Agricultural Mechanization Assistance",
+    "states": [
+      "Uttar Pradesh"
+    ],
+    "supportTypes": [
+      "equipment"
+    ],
+    "farmerTypes": [
+      "marginal",
+      "small",
+      "other"
+    ],
+    "crops": [
+      "all"
+    ],
+    "landTypes": [
+      "marginal",
+      "small",
+      "medium",
+      "large"
+    ],
+    "benefit": "Potential assistance for eligible farm machinery",
+    "eligibility": "Check the current UP agriculture department scheme, eligible equipment and application window.",
+    "documents": [
+      "farmer registration",
+      "identity proof",
+      "equipment-related documents"
+    ],
+    "officialUrl": "https://agridarshan.up.gov.in/",
+    "verificationNote": "Exact subsidy and eligibility depend on the current notification.",
+    "verified": false
+  },
+  {
+    "id": "rajasthan-kisan-samman",
+    "name": "Mukhyamantri Kisan Samman Nidhi Yojana",
+    "states": [
+      "Rajasthan"
+    ],
+    "supportTypes": [
+      "income"
+    ],
+    "farmerTypes": [
+      "marginal",
+      "small",
+      "other"
+    ],
+    "crops": [
+      "all"
+    ],
+    "landTypes": [
+      "marginal",
+      "small",
+      "medium",
+      "large"
+    ],
+    "benefit": "State assistance for qualifying beneficiaries",
+    "eligibility": "Check current Rajasthan beneficiary and registration conditions.",
+    "documents": [
+      "land records",
+      "identity proof",
+      "beneficiary details"
+    ],
+    "officialUrl": "https://jansoochna.rajasthan.gov.in/",
+    "verificationNote": "Confirm current payment rules and eligibility with the state.",
+    "verified": false
+  },
+  {
+    "id": "pm-kisan-maandhan",
+    "name": "PM-Kisan Maandhan Yojana",
+    "states": [
+      "Rajasthan"
+    ],
+    "supportTypes": [
+      "pension"
+    ],
+    "farmerTypes": [
+      "marginal",
+      "small"
+    ],
+    "crops": [
+      "all"
+    ],
+    "landTypes": [
+      "marginal",
+      "small"
+    ],
+    "benefit": "Contributory pension scheme for qualifying small and marginal farmers",
+    "eligibility": "Generally for eligible farmers aged 18–40, subject to landholding and exclusion rules.",
+    "documents": [
+      "identity proof",
+      "bank details",
+      "landholding records"
+    ],
+    "officialUrl": "https://maandhan.in/",
+    "verificationNote": "Enrollment and contribution conditions apply.",
+    "verified": false
+  },
+  {
+    "id": "maharashtra-namo-shetkari",
+    "name": "Namo Shetkari Mahasanman Nidhi",
+    "states": [
+      "Maharashtra"
+    ],
+    "supportTypes": [
+      "income"
+    ],
+    "farmerTypes": [
+      "marginal",
+      "small",
+      "other"
+    ],
+    "crops": [
+      "all"
+    ],
+    "landTypes": [
+      "marginal",
+      "small",
+      "medium",
+      "large"
+    ],
+    "benefit": "State assistance for qualifying beneficiaries",
+    "eligibility": "Check current Maharashtra beneficiary, registration and exclusion conditions.",
+    "documents": [
+      "land records",
+      "identity proof",
+      "beneficiary registration details"
+    ],
+    "officialUrl": "https://mahadbt.maharashtra.gov.in/Farmer/",
+    "verificationNote": "Verify current scheme conditions and payment status through official channels.",
+    "verified": false
+  },
+  {
+    "id": "mahadbt-farmer",
+    "name": "MahaDBT Farmer Schemes",
+    "states": [
+      "Maharashtra"
+    ],
+    "supportTypes": [
+      "equipment",
+      "irrigation"
+    ],
+    "farmerTypes": [
+      "marginal",
+      "small",
+      "other"
+    ],
+    "crops": [
+      "all"
+    ],
+    "landTypes": [
+      "marginal",
+      "small",
+      "medium",
+      "large"
+    ],
+    "benefit": "Potential assistance under applicable farmer subsidy components",
+    "eligibility": "Varies by component, farmer profile, land records and current application window.",
+    "documents": [
+      "farmer registration",
+      "land records",
+      "component-specific documents"
+    ],
+    "officialUrl": "https://mahadbt.maharashtra.gov.in/Farmer/",
+    "verificationNote": "Check the portal for the specific open component and eligibility rules.",
+    "verified": false
+  }
+]
